@@ -1054,16 +1054,23 @@ details > p {
 .ba-panel {
   position: absolute;
   inset: 0;
-  background-image: url('assets/wardrobe-ba.png');
-  background-size: 200% auto;
-  background-repeat: no-repeat;
+  overflow: hidden;
+  background: #e8dfd3;
 }
+[data-theme="dark"] .ba-panel { background: #1a1410; }
 
-.ba-panel--after  { background-position: 100% 30%; }
-.ba-panel--before {
-  background-position: 0% 30%;
-  clip-path: inset(0 50% 0 0);
+.ba-panel--before { clip-path: inset(0 50% 0 0); }
+
+.ba-img {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: auto;
+  max-width: none;
+  display: block;
 }
+.ba-img--before { left: 0; }
+.ba-img--after  { right: 0; }
 
 .ba-label {
   position: absolute;
