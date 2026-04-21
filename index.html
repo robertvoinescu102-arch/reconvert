@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ro" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ReConvert — Reconversia Profesionala a Dulapurilor Disponibilizate</title>
+  <meta name="description" content="Consultanta premium pentru dulapurile care au incheiat primul ciclu de viata. Evaluare vocationala, planificare de traiectorie, integrare in noul context." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="ReConvert — Reconversia Profesionala a Dulapurilor Disponibilizate" />
+  <meta property="og:description" content="Fiecare dulap merita o a doua cariera. Consultanta structurata, rapoarte certificate, discretie absoluta." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://reconvert.ro/og.png" />
+  <meta property="og:url" content="https://reconvert.ro" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ReConvert — Reconversia Dulapurilor" />
+  <meta name="twitter:description" content="Fiecare dulap merita o a doua cariera. Consultanta structurata, certificata, discreta." />
+  <meta name="twitter:image" content="https://reconvert.ro/og.png" />
+
+  <meta name="theme-color" content="#F7F2EB" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#120D09" media="(prefers-color-scheme: dark)" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#" class="nav__logo" id="logo" title="ReConvert — 5 clickuri pentru dosar confidential">
+        <span class="nav__monogram">RC</span>
+        <span class="nav__wordmark">ReConvert</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Meniu principal">
+        <a href="#metodologie">Metodologie</a>
+        <a href="#testimoniale">Dosare</a>
+        <a href="#abonamente">Abonamente</a>
+        <a href="#faq">Intrebari</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Comuta tema (lumina / intuneric)">
+          <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+               aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+               aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+        <a href="#waitlist" class="btn btn--outline btn--sm">Solicita consultatie</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="grain" aria-hidden="true"></div>
+
+    <div class="container hero__inner">
+      <div class="hero__left">
+        <span class="eyebrow reveal">Consultanta certificata · Est. 2001</span>
+        <h1 class="hero__title reveal" style="--delay:.08s">
+          Fiecare dulap<br/>
+          <em>merita</em><br/>
+          o a doua cariera.
+        </h1>
+        <p class="hero__subtitle reveal" style="--delay:.18s">
+          ReConvert asigura evaluarea vocationala, planificarea traiectoriei
+          si integrarea structurata a dulapurilor disponibilizate in noul lor
+          context functional. Metodologie certificata ISO-adjacent. Discretie absoluta.
+        </p>
+        <div class="hero__ctas reveal" style="--delay:.28s">
+          <a href="#waitlist" class="btn btn--primary btn--lg">Deschid un dosar</a>
+          <a href="#metodologie" class="btn btn--ghost">Metodologia noastra <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+
+      <div class="hero__right reveal" aria-hidden="true" style="--delay:.12s">
+        <div class="hero__visual">
+          <div class="wardrobe">
+            <div class="wardrobe__body">
+              <div class="wardrobe__door wardrobe__door--l"></div>
+              <div class="wardrobe__door wardrobe__door--r"></div>
+              <div class="wardrobe__handle wardrobe__handle--l"></div>
+              <div class="wardrobe__handle wardrobe__handle--r"></div>
+              <div class="wardrobe__top-bar"></div>
+            </div>
+            <div class="wardrobe__legs">
+              <span></span><span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__stats-wrap reveal" style="--delay:.4s">
+      <div class="container">
+        <dl class="stats__grid">
+          <div class="stat">
+            <dt>Dulapuri reconvertite</dt>
+            <dd><span data-count="1840">0</span></dd>
+          </div>
+          <div class="stat">
+            <dt>Rata de plasament reusit</dt>
+            <dd><span data-count="97.3">0</span><small>%</small></dd>
+          </div>
+          <div class="stat">
+            <dt>Ani de practica certificata</dt>
+            <dd><span data-count="23">0</span></dd>
+          </div>
+          <div class="stat">
+            <dt>Clienti institutionali activi</dt>
+            <dd><span data-count="148">0</span></dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRESS STRIP ============ -->
+  <div class="strip" aria-label="Publicatii de specialitate">
+    <div class="container">
+      <p class="strip__label">Mentionati in publicatii de specialitate</p>
+      <div class="strip__items">
+        <span>Monitorul Mobilierului</span>
+        <span>Jurnal de Interioare Aplicate</span>
+        <span>Revista Structurilor PAL</span>
+        <span>Industria Lemnului Quarterly</span>
+        <span>Cabinet &amp; Co.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ FEATURES / METODOLOGIE ============ -->
+  <section id="metodologie" class="features">
+    <div class="container">
+      <header class="section__header reveal">
+        <span class="eyebrow">Metodologia ReConvert</span>
+        <h2>Trei etape. Un singur <em>dulap</em> transformat.</h2>
+      </header>
+
+      <div class="features__grid">
+        <article class="feature reveal" style="--delay:.0s">
+          <div class="feature__label">Etapa 01</div>
+          <h3>Evaluare Vocationala Structurala</h3>
+          <p>
+            Consultantul nostru analizeaza geometria interioara, capacitatea portanta si istoricul
+            de utilizare al dulapului. Determinam profilul vocational si compatibilitatea cu noile
+            roluri functionale disponibile pe piata de plasament mobilier.
+          </p>
+        </article>
+
+        <article class="feature reveal" style="--delay:.12s">
+          <div class="feature__label">Etapa 02</div>
+          <h3>Planificarea Traiectoriei Post-Utilizare</h3>
+          <p>
+            Pe baza profilului vocational, elaboram un plan de tranzitie structurat pe 6 pana la
+            18 luni. Identificam contextele compatibile — arhive, biblioteci, oficii de primire —
+            si pregatim documentatia necesara admiterii.
+          </p>
+        </article>
+
+        <article class="feature reveal" style="--delay:.24s">
+          <div class="feature__label">Etapa 03</div>
+          <h3>Integrarea in Noul Context Functional</h3>
+          <p>
+            Asistam activ tranzitia catre noul rol. Monitorizarea adaptarii se face saptamanal
+            timp de 90 de zile. Orice inadaptare structurala sau reticenta de utilizare este
+            documentata si adresata in timp real de echipa dedicata.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section id="testimoniale" class="testimonials">
+    <div class="container">
+      <header class="section__header reveal">
+        <span class="eyebrow">Dosare inchise cu succes</span>
+        <h2>Clientii care au ales <em>continuitatea</em>.</h2>
+      </header>
+
+      <div class="testimonials__grid">
+        <figure class="testimonial reveal" style="--delay:.0s">
+          <blockquote>
+            <p>
+              "Dulapul nostru din 1987 credea ca destinul sau s-a incheiat odata cu renovarea.
+              Astazi functioneaza ca arhiva activa a departamentului juridic. Rata de utilizare
+              lunara: 94 de accesari documentate."
+            </p>
+          </blockquote>
+          <figcaption>
+            <strong>Ing. Ovidiu Marchitan</strong>
+            <span>Director Operational, Holdingul Marchitan &amp; Fii SA</span>
+          </figcaption>
+        </figure>
+
+        <figure class="testimonial reveal" style="--delay:.15s">
+          <blockquote>
+            <p>
+              "Am trimis trei dulapuri la ReConvert in primavara. Unul a devenit biblioteca,
+              unul — oficiu de primire. Al treilea nu a vrut sa vorbeasca despre trecut.
+              ReConvert a respectat asta si a gasit totusi o solutie dupa doua luni."
+            </p>
+          </blockquote>
+          <figcaption>
+            <strong>Drd. Camelia Prisacaru</strong>
+            <span>Asistent Cercetare, Institutul de Studii Mobiliere Avansate</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRICING ============ -->
+  <section id="abonamente" class="pricing">
+    <div class="container">
+      <header class="section__header reveal">
+        <span class="eyebrow">Abonamente de consultanta</span>
+        <h2>Alegeti programul potrivit <em>numarului de dulapuri</em>.</h2>
+      </header>
+
+      <div class="pricing__grid">
+        <article class="plan reveal" style="--delay:.0s">
+          <header class="plan__header">
+            <div class="plan__tier">Esential</div>
+            <p class="plan__desc">Pentru proprietari cu un singur dulap disponibilizat.</p>
+            <p class="plan__price"><span>840</span> EUR / luna</p>
+          </header>
+          <ul class="plan__features">
+            <li>Evaluare vocationala initiala (120 min)</li>
+            <li>Plan de traiectorie pentru 6 luni</li>
+            <li>Raport scris lunar</li>
+            <li>Suport telefonic in zilele lucratoare</li>
+          </ul>
+          <a href="#waitlist" class="btn btn--outline">Deschid dosar Esential</a>
+        </article>
+
+        <article class="plan plan--featured reveal" style="--delay:.12s">
+          <span class="plan__badge">Cel mai solicitat</span>
+          <header class="plan__header">
+            <div class="plan__tier">Premium</div>
+            <p class="plan__desc">Pentru loturi de 3 pana la 8 dulapuri dintr-o singura sursa.</p>
+            <p class="plan__price"><span>2 200</span> EUR / luna</p>
+          </header>
+          <ul class="plan__features">
+            <li>Evaluare vocationala colectiva</li>
+            <li>Plan individual pentru fiecare dulap</li>
+            <li>Consultanta saptaminala dedicata</li>
+            <li>Monitorizare de adaptare 90 de zile</li>
+            <li>Rapoarte audio + scrise bilunare</li>
+          </ul>
+          <a href="#waitlist" class="btn btn--primary">Deschid dosar Premium</a>
+        </article>
+
+        <article class="plan reveal" style="--delay:.24s">
+          <header class="plan__header">
+            <div class="plan__tier">Patrimoniu</div>
+            <p class="plan__desc">Pentru colectii institutionale, conace si mosteniri de mobilier.</p>
+            <p class="plan__price"><span>La cerere</span></p>
+          </header>
+          <ul class="plan__features">
+            <li>Echipa dedicata de doi consultanti</li>
+            <li>Evaluare istorica si structurala extinsa</li>
+            <li>Documentare foto + video a tranzitiei</li>
+            <li>Clauze extinse de confidentialitate</li>
+            <li>Acces la reteaua premium de plasament</li>
+          </ul>
+          <a href="#waitlist" class="btn btn--outline">Solicit o intrevedere</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq" class="faq">
+    <div class="container">
+      <header class="section__header reveal">
+        <span class="eyebrow">Intrebari frecvente</span>
+        <h2>Ce intreaba <em>proprietarii</em> cel mai des.</h2>
+      </header>
+
+      <div class="faq__list">
+        <details>
+          <summary>Dulapul meu este din PAL melaminat. Il acceptati in program?</summary>
+          <p>
+            Da. Acceptam toate substantele structurale: PAL, MDF, lemn masiv, combinatii
+            hibrid-sintetice. Profilul vocational nu depinde de material, ci de geometria
+            functionala si istoricul documentat de utilizare.
+          </p>
+        </details>
+
+        <details>
+          <summary>Care este durata medie a unui program de reconversie?</summary>
+          <p>
+            Intre 6 si 18 luni, in functie de complexitatea profilului si disponibilitatea
+            contextelor de plasament identificate. Dulapurile cu istoric documentat complet
+            au in general tranzitii cu 35% mai rapide.
+          </p>
+        </details>
+
+        <details>
+          <summary>Pot trimite un dulap in program fara sa il informez in prealabil?</summary>
+          <p>
+            Nu. Politica ReConvert impune ca orice dulap sa fie pregatit structural si contextual
+            inainte de admitere. O tranzitie neanuntata genereaza rezistenta adaptativa si intarzie
+            plasamentul cu pana la 40%, conform studiilor noastre interne.
+          </p>
+        </details>
+
+        <details>
+          <summary>Oferiti consultanta si pentru alte piese de mobilier — comode, rafturi?</summary>
+          <p>
+            Nu. ReConvert lucreaza exclusiv cu dulapuri si sifoniere, din motive de specializare
+            metodologica. Pentru reconversia comodelor, recomandam cu caldura partenerul nostru
+            "Tranzitii Mobiliere Sudice" din Craiova.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WAITLIST FORM ============ -->
+  <section id="waitlist" class="waitlist">
+    <div class="grain grain--dark" aria-hidden="true"></div>
+    <div class="container waitlist__inner">
+      <div class="waitlist__copy reveal">
+        <span class="eyebrow">Lista de asteptare</span>
+        <h2>Acceptam <em>12 dosare noi</em> in trimestrul curent.</h2>
+        <p>
+          Completati formularul si va contactam in 48 de ore pentru o evaluare
+          preliminara gratuita. Fara angajamente. Confidential.
+        </p>
+      </div>
+
+      <form id="waitlist-form" class="waitlist__form reveal" novalidate style="--delay:.14s">
+        <label class="field">
+          <span>Nume complet</span>
+          <input type="text" name="nume" required autocomplete="name"
+                 placeholder="ex. Gheorghe Vasilescu" />
+        </label>
+
+        <label class="field">
+          <span>Adresa de email</span>
+          <input type="email" name="email" required autocomplete="email"
+                 placeholder="ex. g.vasilescu@companie.ro" />
+        </label>
+
+        <label class="field">
+          <span>Cate dulapuri necesita consultanta?</span>
+          <select name="dulapuri" required>
+            <option value="">Selectati...</option>
+            <option value="1">Un singur dulap</option>
+            <option value="2-3">2–3 dulapuri</option>
+            <option value="4-8">4–8 dulapuri (lot)</option>
+            <option value="9+">9 sau mai multe (colectie)</option>
+          </select>
+        </label>
+
+        <button type="submit" class="btn btn--primary btn--lg">Deschid dosar de reconversie</button>
+
+        <p class="form__status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="nav__monogram" style="width:40px;height:40px;font-size:1rem;margin-bottom:1rem">RC</span>
+        <p>ReConvert. Consultanta structurata pentru<br/>dulapurile care merita o a doua sansa.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Linkuri subsol">
+        <div>
+          <h4>Servicii</h4>
+          <a href="#">Evaluare vocationala</a>
+          <a href="#">Planificare traiectorie</a>
+          <a href="#">Integrare contextuala</a>
+        </div>
+        <div>
+          <h4>Companie</h4>
+          <a href="#">Despre noi</a>
+          <a href="#">Presa</a>
+          <a href="#">Cariere</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="#">dosare@reconvert.ro</a>
+          <a href="#">+40 21 999 0001</a>
+          <a href="#">Bucuresti · Cluj · Sibiu</a>
+        </div>
+      </nav>
+    </div>
+    <div class="container footer__bottom">
+      <span>© 2026 ReConvert Consulting SRL. Toate drepturile rezervate.</span>
+      <span>AI-Wizard · Week 01 <button id="secret-btn" class="secret-btn" aria-label="dosar confidential">·</button></span>
+    </div>
+  </footer>
+
+  <!-- ============ EASTER EGG DIALOG ============ -->
+  <div id="easter-egg" class="easter" hidden>
+    <div class="easter__card" role="dialog" aria-modal="true" aria-labelledby="easter-title">
+      <div class="easter__stamp">CONFIDENTIAL</div>
+      <h3 id="easter-title">Dosar #RC-0047 — <em>Clasificat</em></h3>
+      <p>
+        In 2019, un dulap de stejar masiv din 1962 a refuzat reconversia timp de 11 luni.
+        Consultantul principal a renuntat. Dulapul, nu. Astazi este director de arhiva
+        la o firma de audit din Brasov.
+      </p>
+      <p class="easter__note">Acest dosar nu apare in rapoartele publice.</p>
+      <button id="easter-close" class="btn btn--outline btn--sm">Inchid dosarul</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
