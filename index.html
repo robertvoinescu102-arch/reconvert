@@ -85,21 +85,71 @@
         </div>
       </div>
 
-      <div class="hero__right reveal" aria-hidden="true" style="--delay:.12s">
-        <div class="hero__visual">
-          <div class="wardrobe">
-            <div class="wardrobe__body">
-              <div class="wardrobe__door wardrobe__door--l"></div>
-              <div class="wardrobe__door wardrobe__door--r"></div>
-              <div class="wardrobe__handle wardrobe__handle--l"></div>
-              <div class="wardrobe__handle wardrobe__handle--r"></div>
-              <div class="wardrobe__top-bar"></div>
-            </div>
-            <div class="wardrobe__legs">
-              <span></span><span></span>
+      <div class="hero__right reveal" style="--delay:.12s">
+        <div class="ba-slider" id="ba-slider" role="img" aria-label="Inainte si dupa reconversie">
+
+          <!-- AFTER (dedesubt, mereu vizibil) -->
+          <div class="ba-panel ba-panel--after">
+            <div class="ba-label">După</div>
+            <div class="wardrobe wardrobe--after">
+              <div class="wardrobe__body">
+                <div class="wardrobe__top-bar"></div>
+                <div class="wardrobe__door wardrobe__door--l wardrobe__door--open-l"></div>
+                <div class="wardrobe__door wardrobe__door--r wardrobe__door--open-r"></div>
+                <div class="wardrobe__handle wardrobe__handle--l"></div>
+                <div class="wardrobe__handle wardrobe__handle--r"></div>
+                <div class="wardrobe__interior">
+                  <div class="w-shelf">
+                    <span class="w-file w-file--1"></span>
+                    <span class="w-file w-file--2"></span>
+                    <span class="w-file w-file--3"></span>
+                    <span class="w-file w-file--4"></span>
+                    <span class="w-file w-file--5"></span>
+                  </div>
+                  <div class="w-shelf">
+                    <span class="w-book w-book--1"></span>
+                    <span class="w-book w-book--2"></span>
+                    <span class="w-book w-book--3"></span>
+                  </div>
+                  <div class="w-badge">RECONVERTIT</div>
+                </div>
+              </div>
+              <div class="wardrobe__legs"><span></span><span></span></div>
             </div>
           </div>
+
+          <!-- BEFORE (deasupra, clipuit) -->
+          <div class="ba-panel ba-panel--before">
+            <div class="ba-label">Înainte</div>
+            <div class="wardrobe wardrobe--before">
+              <div class="wardrobe__body">
+                <div class="wardrobe__top-bar"></div>
+                <div class="wardrobe__door wardrobe__door--l"></div>
+                <div class="wardrobe__door wardrobe__door--r"></div>
+                <div class="wardrobe__handle wardrobe__handle--l"></div>
+                <div class="wardrobe__handle wardrobe__handle--r"></div>
+                <div class="w-dust">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="w-stamp">DISPONIBILIZAT</div>
+              </div>
+              <div class="wardrobe__legs"><span></span><span></span></div>
+            </div>
+          </div>
+
+          <!-- Handle drag -->
+          <div class="ba-handle" id="ba-handle" aria-hidden="true">
+            <div class="ba-line"></div>
+            <div class="ba-knob">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                <path d="M8 5l-5 7 5 7M16 5l5 7-5 7"/>
+              </svg>
+            </div>
+          </div>
+
         </div>
+        <p class="ba-hint">Trage pentru a compara</p>
       </div>
     </div>
 

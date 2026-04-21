@@ -1038,6 +1038,143 @@ details > p {
   .strip__ticker .strip__items { animation: none; }
 }
 
+/* ── 22. BEFORE / AFTER SLIDER ──────────────────────────────── */
+.ba-slider {
+  position: relative;
+  width: clamp(220px, 22vw, 300px);
+  height: clamp(290px, 30vw, 400px);
+  border-radius: var(--radius);
+  overflow: hidden;
+  cursor: ew-resize;
+  user-select: none;
+  touch-action: none;
+  box-shadow: 0 8px 32px rgba(0,0,0,.12);
+}
+
+.ba-panel {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1rem 1rem;
+}
+
+.ba-panel--after  { background: var(--bg); }
+.ba-panel--before {
+  background: #E8E2D8;
+  clip-path: inset(0 50% 0 0);
+}
+[data-theme="dark"] .ba-panel--after  { background: var(--surface); }
+[data-theme="dark"] .ba-panel--before { background: #1C1510; }
+
+.ba-label {
+  position: absolute;
+  top: .75rem;
+  font-size: .65rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  padding: .2rem .65rem;
+  border-radius: 20px;
+  pointer-events: none;
+}
+.ba-panel--after  .ba-label { right: .75rem; background: rgba(var(--accent-rgb),.12); color: var(--accent); }
+.ba-panel--before .ba-label { left:  .75rem; background: rgba(0,0,0,.08); color: var(--text-2); }
+
+.ba-handle {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+  z-index: 10;
+}
+.ba-line { width: 2px; flex: 1; background: var(--accent); opacity: .85; }
+.ba-knob {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 4px 16px rgba(var(--accent-rgb),.4);
+  transition: transform .18s var(--ease);
+}
+.ba-slider.dragging .ba-knob { transform: translateY(-50%) scale(1.15); }
+
+.ba-hint {
+  text-align: center;
+  font-size: .7rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--text-2);
+  margin-top: .75rem;
+  max-width: none;
+  opacity: .7;
+}
+
+/* Wardrobe AFTER — ușile deschise + interior */
+.wardrobe--after .wardrobe__door--open-l { transform: perspective(300px) rotateY(-52deg); }
+.wardrobe--after .wardrobe__door--open-r { transform: perspective(300px) rotateY( 52deg); }
+
+.wardrobe__interior {
+  position: absolute;
+  inset: 4% 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: .6rem;
+  padding: .5rem;
+  z-index: 0;
+}
+
+.w-shelf { display: flex; align-items: flex-end; gap: 3px; border-bottom: 1.5px solid var(--border); padding-bottom: 4px; }
+
+.w-file { display: block; width: 10px; border-radius: 1px 1px 0 0; }
+.w-file--1 { height: 28px; background: #C4572A; }
+.w-file--2 { height: 22px; background: #8B6E4E; }
+.w-file--3 { height: 32px; background: #C4572A; opacity: .6; }
+.w-file--4 { height: 18px; background: var(--border); }
+.w-file--5 { height: 25px; background: #8B6E4E; opacity: .7; }
+
+.w-book { display: block; border-radius: 1px; }
+.w-book--1 { width: 14px; height: 38px; background: #B84A22; }
+.w-book--2 { width: 10px; height: 32px; background: var(--text-2); opacity: .5; }
+.w-book--3 { width: 16px; height: 42px; background: #8B6E4E; opacity: .6; }
+
+.w-badge {
+  font-size: .52rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--accent); border: 1px solid var(--accent); border-radius: 2px;
+  padding: .15rem .4rem; align-self: center; margin-top: .25rem;
+}
+
+/* Wardrobe BEFORE — prăfuit, stamp */
+.wardrobe--before .wardrobe__body    { border-color: #9A8E80; background: #DDD6CA; }
+.wardrobe--before .wardrobe__top-bar { background: #9A8E80; }
+.wardrobe--before .wardrobe__legs span { background: #9A8E80; }
+.wardrobe--before .wardrobe__handle--l,
+.wardrobe--before .wardrobe__handle--r { background: #9A8E80; }
+[data-theme="dark"] .wardrobe--before .wardrobe__body { border-color: #4A3E32; background: #2A2018; }
+
+.w-dust { position: absolute; bottom: 20%; left: 50%; transform: translateX(-50%); display: flex; gap: 4px; }
+.w-dust span { display: block; width: 5px; height: 5px; border-radius: 50%; background: #9A8E80; opacity: .5; }
+
+.w-stamp {
+  position: absolute; top: 30%; left: 50%;
+  transform: translateX(-50%) rotate(-8deg);
+  font-size: .55rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+  color: #C0392B; border: 1.5px solid #C0392B; padding: .15rem .4rem;
+  border-radius: 2px; opacity: .65; white-space: nowrap;
+}
+
 /* ── 24. WARDROBE INTRO ANIMATION ────────────────────────────── */
 .wardrobe.intro .wardrobe__door--l {
   animation: door-open-l 1.2s .4s var(--ease-out) forwards;

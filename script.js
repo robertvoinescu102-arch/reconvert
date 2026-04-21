@@ -208,6 +208,31 @@
     }, { passive: true });
   }
 
+  /* ── 8. BEFORE / AFTER SLIDER ────────────────────────────── */
+  (function initBASlider() {
+    var slider  = document.getElementById('ba-slider');
+    var handle  = document.getElementById('ba-handle');
+    var before  = slider && slider.querySelector('.ba-panel--before');
+    if (!slider || !before) return;
+
+    var dragging = false;
+
+    function setPos(clientX) {
+      var rect = slider.getBoundingClientRect();
+      var pct  = Math.min(Math.max((clientX - rect.left) / rect.width * 100, 2), 98);
+      before.style.clipPath = 'inset(0 ' + (100 - pct) + '% 0 0)';
+      handle.style.left = pct + '%';
+    }
+
+    slider.addEventListener('mousedown',  function (e) { dragging = true; slider.classList.add('dragging'); setPos(e.clientX); });
+    window.addEventListener('mousemove',  function (e) { if (dragging) setPos(e.clientX); });
+    window.addEventListener('mouseup',    function ()  { dragging = false; slider.classList.remove('dragging'); });
+
+    slider.addEventListener('touchstart', function (e) { dragging = true; slider.classList.add('dragging'); setPos(e.touches[0].clientX); }, { passive: true });
+    window.addEventListener('touchmove',  function (e) { if (dragging) setPos(e.touches[0].clientX); }, { passive: true });
+    window.addEventListener('touchend',   function ()  { dragging = false; slider.classList.remove('dragging'); });
+  })();
+
   /* ── 8. WARDROBE INTRO ANIMATION ─────────────────────────── */
   if (!prefersReduced) {
     var wardrobe = document.querySelector('.wardrobe');
