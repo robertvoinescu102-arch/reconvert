@@ -91,50 +91,157 @@
           <!-- AFTER (dedesubt, mereu vizibil) -->
           <div class="ba-panel ba-panel--after">
             <div class="ba-label">După</div>
-            <div class="wardrobe wardrobe--after">
-              <div class="wardrobe__body">
-                <div class="wardrobe__top-bar"></div>
-                <div class="wardrobe__door wardrobe__door--l wardrobe__door--open-l"></div>
-                <div class="wardrobe__door wardrobe__door--r wardrobe__door--open-r"></div>
-                <div class="wardrobe__handle wardrobe__handle--l"></div>
-                <div class="wardrobe__handle wardrobe__handle--r"></div>
-                <div class="wardrobe__interior">
-                  <div class="w-shelf">
-                    <span class="w-file w-file--1"></span>
-                    <span class="w-file w-file--2"></span>
-                    <span class="w-file w-file--3"></span>
-                    <span class="w-file w-file--4"></span>
-                    <span class="w-file w-file--5"></span>
-                  </div>
-                  <div class="w-shelf">
-                    <span class="w-book w-book--1"></span>
-                    <span class="w-book w-book--2"></span>
-                    <span class="w-book w-book--3"></span>
-                  </div>
-                  <div class="w-badge">RECONVERTIT</div>
-                </div>
-              </div>
-              <div class="wardrobe__legs"><span></span><span></span></div>
-            </div>
+            <svg class="w-svg" viewBox="0 0 200 260" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="woodAfter" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%"   stop-color="#C8B89A"/>
+                  <stop offset="50%"  stop-color="#D4C4A8"/>
+                  <stop offset="100%" stop-color="#C0A882"/>
+                </linearGradient>
+                <linearGradient id="interiorGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%"   stop-color="#F5EFE6"/>
+                  <stop offset="100%" stop-color="#EDE4D6"/>
+                </linearGradient>
+                <linearGradient id="doorLeftAfter" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%"   stop-color="#B8A888"/>
+                  <stop offset="100%" stop-color="#C8B89A"/>
+                </linearGradient>
+                <linearGradient id="doorRightAfter" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%"   stop-color="#C8B89A"/>
+                  <stop offset="100%" stop-color="#B0A080"/>
+                </linearGradient>
+              </defs>
+
+              <!-- Corp dulap -->
+              <rect x="18" y="18" width="164" height="210" rx="2" fill="url(#woodAfter)" stroke="#A89070" stroke-width="1.5"/>
+              <!-- Blat superior -->
+              <rect x="12" y="12" width="176" height="10" rx="2" fill="#C0A882" stroke="#A89070" stroke-width="1"/>
+              <!-- Soclu inferior -->
+              <rect x="18" y="224" width="164" height="6" rx="1" fill="#B8A070"/>
+              <!-- Picioare -->
+              <rect x="32" y="230" width="16" height="18" rx="2" fill="#A89060"/>
+              <rect x="152" y="230" width="16" height="18" rx="2" fill="#A89060"/>
+
+              <!-- Interior (vizibil între uși) -->
+              <rect x="54" y="22" width="92" height="202" fill="url(#interiorGrad)"/>
+
+              <!-- Raft 1 -->
+              <rect x="54" y="90" width="92" height="3" fill="#D4C4A8"/>
+              <!-- Raft 2 -->
+              <rect x="54" y="155" width="92" height="3" fill="#D4C4A8"/>
+
+              <!-- Dosare pe raft 1 -->
+              <rect x="60" y="60" width="12" height="30" rx="1" fill="#B84A22"/>
+              <rect x="74" y="65" width="10" height="25" rx="1" fill="#8B6E4E"/>
+              <rect x="86" y="57" width="12" height="33" rx="1" fill="#C4572A" opacity=".85"/>
+              <rect x="100" y="68" width="8"  height="22" rx="1" fill="#D4C4A8" stroke="#C0B090" stroke-width=".5"/>
+              <rect x="110" y="62" width="11" height="28" rx="1" fill="#8B6E4E" opacity=".9"/>
+              <rect x="123" y="66" width="9"  height="24" rx="1" fill="#B84A22" opacity=".6"/>
+
+              <!-- Cărți pe raft 2 -->
+              <rect x="60"  y="118" width="14" height="37" rx="1" fill="#7A5C3A"/>
+              <rect x="76"  y="123" width="11" height="32" rx="1" fill="#B84A22"/>
+              <rect x="89"  y="116" width="16" height="39" rx="1" fill="#5C4A2A"/>
+              <rect x="107" y="121" width="10" height="34" rx="1" fill="#9A7A50" opacity=".8"/>
+              <rect x="119" y="119" width="13" height="36" rx="1" fill="#B84A22" opacity=".55"/>
+
+              <!-- Badge RECONVERTIT -->
+              <rect x="66" y="168" width="68" height="16" rx="2" fill="none" stroke="#B84A22" stroke-width="1.2"/>
+              <text x="100" y="179.5" text-anchor="middle" font-family="'Jost',sans-serif" font-size="6.5" font-weight="600" letter-spacing="1.2" fill="#B84A22">RECONVERTIT</text>
+
+              <!-- Ușa stânga — deschisă spre exterior (perspectivă) -->
+              <g transform="skewY(-4)">
+                <rect x="8" y="20" width="44" height="206" rx="1" fill="url(#doorLeftAfter)" stroke="#A89070" stroke-width="1"/>
+                <!-- Panou decorativ ușă -->
+                <rect x="13" y="28" width="34" height="90" rx="1" fill="none" stroke="#B8A070" stroke-width=".8" opacity=".6"/>
+                <rect x="13" y="126" width="34" height="90" rx="1" fill="none" stroke="#B8A070" stroke-width=".8" opacity=".6"/>
+                <!-- Mâner -->
+                <rect x="49" y="118" width="4" height="14" rx="2" fill="#C8A860"/>
+              </g>
+
+              <!-- Ușa dreapta — deschisă spre exterior -->
+              <g transform="translate(200,0) scale(-1,1) skewY(-4)">
+                <rect x="8" y="20" width="44" height="206" rx="1" fill="url(#doorRightAfter)" stroke="#A89070" stroke-width="1"/>
+                <rect x="13" y="28" width="34" height="90" rx="1" fill="none" stroke="#B8A070" stroke-width=".8" opacity=".6"/>
+                <rect x="13" y="126" width="34" height="90" rx="1" fill="none" stroke="#B8A070" stroke-width=".8" opacity=".6"/>
+                <rect x="49" y="118" width="4" height="14" rx="2" fill="#C8A860"/>
+              </g>
+
+              <!-- Linie centrală dulap -->
+              <line x1="100" y1="22" x2="100" y2="224" stroke="#A89070" stroke-width=".8" stroke-dasharray="3,3" opacity=".4"/>
+            </svg>
           </div>
 
           <!-- BEFORE (deasupra, clipuit) -->
           <div class="ba-panel ba-panel--before">
             <div class="ba-label">Înainte</div>
-            <div class="wardrobe wardrobe--before">
-              <div class="wardrobe__body">
-                <div class="wardrobe__top-bar"></div>
-                <div class="wardrobe__door wardrobe__door--l"></div>
-                <div class="wardrobe__door wardrobe__door--r"></div>
-                <div class="wardrobe__handle wardrobe__handle--l"></div>
-                <div class="wardrobe__handle wardrobe__handle--r"></div>
-                <div class="w-dust">
-                  <span></span><span></span><span></span>
-                </div>
-                <div class="w-stamp">DISPONIBILIZAT</div>
-              </div>
-              <div class="wardrobe__legs"><span></span><span></span></div>
-            </div>
+            <svg class="w-svg" viewBox="0 0 200 260" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="woodBefore" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%"   stop-color="#8A8078"/>
+                  <stop offset="50%"  stop-color="#968E84"/>
+                  <stop offset="100%" stop-color="#827A72"/>
+                </linearGradient>
+                <linearGradient id="doorLBefore" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%"   stop-color="#7E7670"/>
+                  <stop offset="100%" stop-color="#908880"/>
+                </linearGradient>
+                <linearGradient id="doorRBefore" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%"   stop-color="#908880"/>
+                  <stop offset="100%" stop-color="#7E7670"/>
+                </linearGradient>
+              </defs>
+
+              <!-- Corp dulap -->
+              <rect x="18" y="18" width="164" height="210" rx="2" fill="url(#woodBefore)" stroke="#6A6460" stroke-width="1.5"/>
+              <!-- Blat superior -->
+              <rect x="12" y="12" width="176" height="10" rx="2" fill="#807870" stroke="#6A6460" stroke-width="1"/>
+              <!-- Soclu -->
+              <rect x="18" y="224" width="164" height="6" rx="1" fill="#786E66"/>
+              <!-- Picioare -->
+              <rect x="32"  y="230" width="16" height="18" rx="2" fill="#706860"/>
+              <rect x="152" y="230" width="16" height="18" rx="2" fill="#706860"/>
+
+              <!-- Ușa stânga -->
+              <rect x="20" y="20" width="79" height="206" rx="1" fill="url(#doorLBefore)" stroke="#6A6460" stroke-width="1"/>
+              <!-- Panou decorativ stânga -->
+              <rect x="26" y="28" width="67" height="90" rx="1" fill="none" stroke="#6A6460" stroke-width=".8" opacity=".5"/>
+              <rect x="26" y="126" width="67" height="90" rx="1" fill="none" stroke="#6A6460" stroke-width=".8" opacity=".5"/>
+
+              <!-- Ușa dreapta -->
+              <rect x="101" y="20" width="79" height="206" rx="1" fill="url(#doorRBefore)" stroke="#6A6460" stroke-width="1"/>
+              <!-- Panou decorativ dreapta -->
+              <rect x="107" y="28" width="67" height="90" rx="1" fill="none" stroke="#6A6460" stroke-width=".8" opacity=".5"/>
+              <rect x="107" y="126" width="67" height="90" rx="1" fill="none" stroke="#6A6460" stroke-width=".8" opacity=".5"/>
+
+              <!-- Mânere -->
+              <rect x="93"  y="115" width="5" height="18" rx="2.5" fill="#908880"/>
+              <rect x="102" y="115" width="5" height="18" rx="2.5" fill="#908880"/>
+
+              <!-- Praf / zgârieturi -->
+              <line x1="35"  y1="180" x2="65"  y2="185" stroke="#706860" stroke-width=".8" opacity=".4"/>
+              <line x1="40"  y1="190" x2="58"  y2="193" stroke="#706860" stroke-width=".6" opacity=".3"/>
+              <line x1="140" y1="175" x2="165" y2="180" stroke="#706860" stroke-width=".8" opacity=".4"/>
+              <circle cx="55"  cy="210" r="2" fill="#706860" opacity=".35"/>
+              <circle cx="70"  cy="215" r="1.5" fill="#706860" opacity=".25"/>
+              <circle cx="145" cy="208" r="2" fill="#706860" opacity=".3"/>
+
+              <!-- Ștampilă DISPONIBILIZAT -->
+              <g transform="translate(100,120) rotate(-10)">
+                <rect x="-52" y="-14" width="104" height="28" rx="2" fill="none" stroke="#C0392B" stroke-width="1.8" opacity=".7"/>
+                <text x="0" y="5.5" text-anchor="middle" font-family="'Jost',sans-serif" font-size="9" font-weight="700" letter-spacing="1.5" fill="#C0392B" opacity=".7">DISPONIBILIZAT</text>
+              </g>
+
+              <!-- Cobweb colț dreapta sus -->
+              <g opacity=".25" stroke="#908880" stroke-width=".6">
+                <line x1="158" y1="20" x2="176" y2="38"/>
+                <line x1="163" y1="20" x2="176" y2="33"/>
+                <line x1="168" y1="20" x2="176" y2="28"/>
+                <line x1="158" y1="20" x2="176" y2="20"/>
+                <path d="M164 20 Q170 26 176 20" fill="none"/>
+                <path d="M161 23 Q169 30 176 24" fill="none"/>
+              </g>
+            </svg>
           </div>
 
           <!-- Handle drag -->

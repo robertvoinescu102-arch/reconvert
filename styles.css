@@ -1061,13 +1061,20 @@ details > p {
   padding: 1.5rem 1rem 1rem;
 }
 
-.ba-panel--after  { background: var(--bg); }
+.ba-panel--after  { background: #F0E8DA; }
 .ba-panel--before {
-  background: #E8E2D8;
+  background: #D8D0C4;
   clip-path: inset(0 50% 0 0);
 }
-[data-theme="dark"] .ba-panel--after  { background: var(--surface); }
-[data-theme="dark"] .ba-panel--before { background: #1C1510; }
+[data-theme="dark"] .ba-panel--after  { background: #1E1710; }
+[data-theme="dark"] .ba-panel--before { background: #141008; }
+
+.w-svg {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  display: block;
+}
 
 .ba-label {
   position: absolute;
