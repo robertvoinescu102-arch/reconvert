@@ -1008,27 +1008,6 @@ details > p {
 /* ── 21. SELECTIE TEXT ───────────────────────────────────────── */
 ::selection { background: var(--accent); color: #fff; }
 
-/* ── 22. CURSOR CUSTOM ───────────────────────────────────────── */
-@media (pointer: fine) {
-  body { cursor: none; }
-  a, button, summary { cursor: none; }
-}
-
-.rc-cursor {
-  position: fixed;
-  top: 0; left: 0;
-  width: 20px; height: 20px;
-  color: var(--accent);
-  pointer-events: none;
-  z-index: 9999;
-  opacity: 0;
-  transition: opacity .2s, transform .08s linear, color .2s;
-  will-change: transform;
-}
-.rc-cursor--hover {
-  color: var(--text);
-  transform: scale(1.3) !important;
-}
 
 /* ── 23. PRESS STRIP TICKER ──────────────────────────────────── */
 .strip__ticker {

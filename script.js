@@ -226,25 +226,6 @@
     stripItems.parentNode.classList.add('strip__ticker');
   }
 
-  /* ── 10. CURSOR CUSTOM ────────────────────────────────────── */
-  (function initCursor() {
-    var cursor = document.createElement('div');
-    cursor.className = 'rc-cursor';
-    cursor.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 4v5"/></svg>';
-    document.body.appendChild(cursor);
-    var cx = -100, cy = -100;
-    document.addEventListener('mousemove', function (e) {
-      cx = e.clientX; cy = e.clientY;
-      cursor.style.transform = 'translate(' + (cx - 10) + 'px,' + (cy - 10) + 'px)';
-    });
-    document.addEventListener('mouseenter', function () { cursor.style.opacity = '1'; });
-    document.addEventListener('mouseleave', function () { cursor.style.opacity = '0'; });
-    var clickables = document.querySelectorAll('a, button, summary, .plan, .testimonial');
-    clickables.forEach(function (el) {
-      el.addEventListener('mouseenter', function () { cursor.classList.add('rc-cursor--hover'); });
-      el.addEventListener('mouseleave', function () { cursor.classList.remove('rc-cursor--hover'); });
-    });
-  })();
 
   /* ── 11. CONSOLE SIGNATURE ────────────────────────────────── */
   if (window.console && console.log) {
