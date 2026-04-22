@@ -1,78 +1,45 @@
-# ReConvert — Reconversia Profesionala a Dulapurilor Disponibilizate
+# InterSilentium S.A. — Slefuirea Tacerilor dintre doua Convorbiri Telefonice Ratate
 
-> *"Fiecare dulap merita o a doua cariera."*
+> *"Slefuim tacerile cu precizie de laborator. Din 1994."*
 
-Consultanta premium pentru dulapurile care au incheiat primul ciclu de viata.
-Evaluare vocationala, planificare de traiectorie, integrare in noul context functional.
-Metodologie certificata ISO-adjacent. Discretie absoluta.
+Solutii certificate de interventie auditiva pasiva pentru intervalele nelocuite dintre apelurile telefonice nepreluate. Metodologie proprie. Discretie contractuala.
 
 ---
 
 ## Stack tehnic
 
-- **HTML5** semantic (`section`, `article`, `figure`, `details`, `blockquote`)
-- **CSS3** pur — custom properties, `clamp()`, Grid, Flexbox, IntersectionObserver-ready
-- **JavaScript** vanilla — IIFE, fara dependinte, ~145 linii
-
-Zero framework-uri. Zero build step. Se deschide direct in browser.
-
----
+- HTML5 semantic
+- CSS3 (custom properties, clamp(), grid, IntersectionObserver animations)
+- Vanilla JS (IIFE, fara dependinte)
+- Fonturi: [Syne](https://fonts.google.com/specimen/Syne) + [Courier Prime](https://fonts.google.com/specimen/Courier+Prime) via Google Fonts
 
 ## Cum rulez local
 
 ```bash
 cd my-solution
 python3 -m http.server 8080
-# apoi: http://localhost:8080
+# deschide http://localhost:8080
 ```
-
-Sau direct: dublu-click pe `index.html`.
-
----
 
 ## Directie aesthetic
 
-**Editorial Luxury** — ales pentru ca serviciul finge seriozitate corporatista la nivel maxim.
-Contrastul dintre limbajul B2B impecabil si obiectul absurd (dulapul) functioneaza
-cel mai bine intr-un cadru vizual sobru, rafinat, fara niciun semn de ironie.
+**Brutalist × Scientific Instrument Lab** — tipografie monumentala Syne 800, mono Courier Prime pentru corp si etichete tehnice, paleta stricta alb/negru/#F2E62D (galben electric). Border table system pentru grile, zero border-radius, cursor crosshair global. Scan-line overlay pe hero pentru atmosfera de osciloscop.
 
-| Decizie | Alegere | Motivatie |
-|---|---|---|
-| Font display | Cormorant Garamond | Serif clasic, italic expresiv, autoritate |
-| Font body | Jost | Geometric curat, lizibil la dimensiuni mici |
-| Culoare primara | `#F7F2EB` (crem cald) | Hartie premium, registre notariale |
-| Accent | `#B84A22` (teracota) | Caldura, sigilii de ceara, branding distinctiv |
-| Background dark | `#120D09` (carbon) | Profunzime, seriozitate institutionala |
+## Features Pro implementate
 
----
-
-## Pro features
-
-| Feature | Implementat |
-|---|---|
-| Dark / light mode toggle | Da — buton in nav, respecta `prefers-color-scheme` |
-| Scroll reveal fade-in | Da — `IntersectionObserver`, `prefers-reduced-motion` |
-| Form waitlist cu validare | Da — nume ≥2 char, email regex, select obligatoriu |
-| Easter egg | Da — 5 clickuri pe logo RC sau butonul `·` din footer; Konami code |
-| OG tags | Da — `og:title`, `og:description`, `og:image`, `twitter:card` |
-| Counter animat | Da — cifrele din Hero cresc de la 0 la valoarea finala |
-
----
-
-## 3 prompt-uri cheie
-
-1. `"Scrie index.html complet cu serviciul ReConvert — reconversia profesionala a dulapurilor disponibilizate. Sectiuni: Hero, Features (3 etape metodologice), Testimoniale (2), Pricing (3 tier-uri: Esential / Premium / Patrimoniu), FAQ (4 intrebari), Waitlist form, Footer. Copy B2B premium in romana, ton Stripe/Linear, zero emoji, absurdul doar din CE face serviciul."`
-
-2. `"Foloseste skill-ul frontend-design. Scrie styles.css directie Editorial Luxury: Cormorant Garamond + Jost, paleta crem/teracota/carbon, dark mode via [data-theme], scroll reveal .reveal, CSS wardrobe illustration in hero, grain texture SVG inline."`
-
-3. `"Scrie script.js IIFE vanilla: theme toggle cu localStorage, scroll reveal IntersectionObserver, counter animat pentru stats, form validation, easter egg la 5 clickuri pe logo + Konami code, nav shadow on scroll."`
-
----
+- Dark / light mode toggle (respecta `prefers-color-scheme`)
+- Scroll reveal cu IntersectionObserver
+- Waveform SVG animat in hero (semnal live)
+- Ticker live cu interventii simulate
+- Sectiune Before / After cu doua osciloscoape
+- Counter animat cu blur + flash galben la final
+- Waitlist form cu validare (nume, email, select)
+- Easter egg: Konami code ↑↑↓↓←→←→BA
 
 ## Ce am invatat
 
-- **CSS custom properties + `[data-theme]`** fac dark mode fara un rand de JavaScript in CSS
-- **`clamp()`** elimina aproape complet media queries pentru tipografie si spacing
-- **IntersectionObserver** e mult mai performant decat scroll listener pentru reveal si counters
-- **Contrastul forma-fond** functioneaza cu atat mai bine cu cat designul e mai sobru — ironia nu trebuie explicata niciodata explicit
-- **CSS illustration** (dulapul din Hero) adauga personalitate fara niciun fisier extern
+- `clamp()` + CSS custom properties rezolva responsive fara media queries excesive
+- Border table system (border pe container + border pe celula) e mai curat decat gap + background
+- `IntersectionObserver` cu `unobserve` dupa primul trigger e mai eficient decat scroll listener
+- Waveform animat in SVG prin `setAttribute('points', ...)` in RAF — usor si fara librarii
+- Ticker seamless loop: duplici HTML-ul in JS, animezi la `-50%`
