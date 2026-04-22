@@ -3,436 +3,430 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ReConvert — Reconversia Profesionala a Dulapurilor Disponibilizate</title>
-  <meta name="description" content="Consultanta premium pentru dulapurile care au incheiat primul ciclu de viata. Evaluare vocationala, planificare de traiectorie, integrare in noul context." />
+  <title>InterSilentium S.A. — Slefuirea Profesionala a Tacerilor</title>
+  <meta name="description" content="Solutii certificate de interventie auditiva pasiva pentru intervalele nelocuite dintre apelurile telefonice nepreluate. Metodologie proprie. Din 1994." />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="ReConvert — Reconversia Profesionala a Dulapurilor Disponibilizate" />
-  <meta property="og:description" content="Fiecare dulap merita o a doua cariera. Consultanta structurata, rapoarte certificate, discretie absoluta." />
+  <meta property="og:title" content="InterSilentium S.A. — Slefuirea Profesionala a Tacerilor" />
+  <meta property="og:description" content="Solutii certificate de interventie auditiva pasiva pentru intervalele nelocuite dintre apelurile telefonice nepreluate." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://reconvert.ro/og.png" />
-  <meta property="og:url" content="https://reconvert.ro" />
+  <meta property="og:image" content="https://intersilentium.example.com/og.png" />
+  <meta property="og:url" content="https://intersilentium.example.com" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="ReConvert — Reconversia Dulapurilor" />
-  <meta name="twitter:description" content="Fiecare dulap merita o a doua cariera. Consultanta structurata, certificata, discreta." />
-  <meta name="twitter:image" content="https://reconvert.ro/og.png" />
+  <meta name="twitter:title" content="InterSilentium S.A." />
+  <meta name="twitter:description" content="Slefuirea profesionala a tacerilor dintre apelurile telefonice nepreluate." />
+  <meta name="twitter:image" content="https://intersilentium.example.com/og.png" />
 
-  <meta name="theme-color" content="#F7F2EB" media="(prefers-color-scheme: light)" />
-  <meta name="theme-color" content="#120D09" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0D0D0D" media="(prefers-color-scheme: dark)" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
-
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- ============ NAV ============ -->
-  <header class="nav">
+  <!-- SITE HEADER (ticker + nav, sticky together) -->
+  <div class="site-header">
+
+    <div class="ticker" aria-label="Status interventii live">
+      <div class="ticker__inner">
+        <span class="ticker__live">&#9679; LIVE</span>
+        <div class="ticker__track" id="ticker-track">
+          <span>INTERVENTIE ACTIVA &mdash; Tacere nr.&nbsp;47.292 &middot; Basel &middot; 4,3&nbsp;sec &middot; ISM-4 activ &middot; Scor curent:&nbsp;94,2</span>
+          <span class="ticker__sep">//</span>
+          <span>INCHEIAT &mdash; Tacere nr.&nbsp;47.291 &middot; Scor final:&nbsp;99,1 &middot; Arhivat &middot; Durata:&nbsp;12&nbsp;min</span>
+          <span class="ticker__sep">//</span>
+          <span>IN ASTEPTARE &mdash; Tacere nr.&nbsp;47.293 &middot; Praga &middot; ETA&nbsp;14:30 &middot; Inginer: K.&nbsp;Novak</span>
+          <span class="ticker__sep">//</span>
+          <span>ALERTA &mdash; 3 taceri nerecenzionate &middot; Zona: Sibiu &middot; Prioritate: medie</span>
+          <span class="ticker__sep">//</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAV -->
+    <header class="nav">
     <div class="container nav__inner">
-      <a href="#" class="nav__logo" id="logo" title="ReConvert — 5 clickuri pentru dosar confidential">
-        <span class="nav__monogram">RC</span>
-        <span class="nav__wordmark">ReConvert</span>
+      <a href="#" class="nav__logo" id="logo">
+        <span class="nav__brand">INTERSILENTIUM</span>
+        <span class="nav__sub">S.A.</span>
       </a>
-
       <nav class="nav__links" aria-label="Meniu principal">
-        <a href="#metodologie">Metodologie</a>
-        <a href="#testimoniale">Dosare</a>
+        <a href="#metodologie">Protocol</a>
+        <a href="#testimoniale">Referinte</a>
         <a href="#abonamente">Abonamente</a>
-        <a href="#faq">Intrebari</a>
+        <a href="#intrebari">Intrebari</a>
       </nav>
-
       <div class="nav__actions">
-        <button id="theme-toggle" class="theme-toggle" aria-label="Comuta tema (lumina / intuneric)">
-          <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none"
-               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-               aria-hidden="true">
-            <circle cx="12" cy="12" r="4"/>
-            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
-          </svg>
-          <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none"
-               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-               aria-hidden="true">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-          </svg>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Comuta tema">
+          <span class="theme-label">LUMINA</span>
         </button>
-        <a href="#waitlist" class="btn btn--outline btn--sm">Solicita consultatie</a>
+        <a href="#lista" class="btn btn--primary btn--sm">Rezerva analiza</a>
       </div>
     </div>
   </header>
+  </div><!-- /.site-header -->
 
-  <!-- ============ HERO ============ -->
+  <!-- HERO -->
   <section class="hero">
-    <div class="grain" aria-hidden="true"></div>
-
     <div class="container hero__inner">
-      <div class="hero__left">
-        <span class="eyebrow reveal">Consultanta certificata · Est. 2001</span>
-        <h1 class="hero__title reveal" style="--delay:.08s">
-          Nu mai exista dulapuri fara viitor.<br/>
-          Doar dulapuri fara <em>consultant</em>.
-        </h1>
-        <p class="hero__subtitle reveal" style="--delay:.18s">
-          ReConvert asigura evaluarea vocationala, planificarea traiectoriei
-          si integrarea structurata a dulapurilor disponibilizate in noul lor
-          context functional. Metodologie certificata ISO-adjacent. Discretie absoluta.
-        </p>
-        <div class="hero__ctas reveal" style="--delay:.28s">
-          <a href="#waitlist" class="btn btn--primary btn--lg">Deschid un dosar</a>
-          <a href="#metodologie" class="btn btn--ghost">Metodologia noastra <span aria-hidden="true">→</span></a>
-        </div>
+      <p class="eyebrow reveal">FONDATI IN 1994 &middot; BASEL &middot; CERTIFICAT ISO 19011:2018</p>
+      <h1 class="hero__title reveal" style="--delay:.05s">
+        Slefuim<br>
+        tacerile<br>
+        <em>cu precizie</em><br>
+        de laborator.
+      </h1>
+      <p class="hero__sub reveal" style="--delay:.12s">
+        InterSilentium S.A. ofera solutii certificate de interventie auditiva pasiva
+        pentru intervalele nelocuite dintre apelurile telefonice nepreluate.
+        Metodologie proprie. Rapoarte saptaminale. Discretie contractuala.
+      </p>
+      <div class="hero__ctas reveal" style="--delay:.18s">
+        <a href="#lista" class="btn btn--primary">Solicita o analiza</a>
+        <a href="#metodologie" class="btn btn--ghost">Protocol ISS-7 <span aria-hidden="true">&#8594;</span></a>
       </div>
 
-      <div class="hero__right reveal" style="--delay:.12s">
-        <div class="ba-slider" id="ba-slider" role="img" aria-label="Inainte si dupa reconversie">
-
-          <!-- AFTER (dedesubt, mereu vizibil) -->
-          <div class="ba-panel ba-panel--after">
-            <div class="ba-label">După</div>
-            <img src="assets/wardrobe-ba.png" class="ba-img ba-img--after" alt="" aria-hidden="true">
-          </div>
-
-          <!-- BEFORE (deasupra, clipuit) -->
-          <div class="ba-panel ba-panel--before">
-            <div class="ba-label">Înainte</div>
-            <img src="assets/wardrobe-ba.png" class="ba-img ba-img--before" alt="" aria-hidden="true">
-          </div>
-
-          <!-- Handle drag -->
-          <div class="ba-handle" id="ba-handle" aria-hidden="true">
-            <div class="ba-line"></div>
-            <div class="ba-knob">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
-                   stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
-                <path d="M8 5l-5 7 5 7M16 5l5 7-5 7"/>
-              </svg>
-            </div>
-          </div>
-
+      <dl class="hero__stats reveal" style="--delay:.26s">
+        <div class="stat">
+          <dd class="stat__num"><span data-count="47291">0</span></dd>
+          <dt class="stat__label">Taceri slefuite</dt>
         </div>
-        <p class="ba-hint">Trage pentru a compara</p>
-      </div>
+        <div class="stat">
+          <dd class="stat__num"><span data-count="99.1">0</span><small>%</small></dd>
+          <dt class="stat__label">Conformitate ISS-7</dt>
+        </div>
+        <div class="stat">
+          <dd class="stat__num"><span data-count="312">0</span></dd>
+          <dt class="stat__label">Clienti activi</dt>
+        </div>
+      </dl>
+
+      <figure class="hero__wave reveal" style="--delay:.32s" aria-hidden="true">
+        <svg viewBox="0 0 900 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <defs>
+            <pattern id="osc-grid" width="45" height="20" patternUnits="userSpaceOnUse">
+              <path d="M 45 0 L 0 0 0 20" fill="none" stroke="currentColor" stroke-width="0.4" opacity="0.15"/>
+            </pattern>
+          </defs>
+          <rect width="900" height="100" fill="url(#osc-grid)"/>
+          <line x1="0" y1="50" x2="900" y2="50" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
+          <polyline
+            points="0,50 25,50 27,47 29,53 31,50 60,50 62,45 65,56 67,50 100,50 102,52 104,48 106,50 150,50 152,44 155,57 157,50 200,50 220,50 222,54 224,46 226,50 265,50 267,47 269,50 300,50 322,43 325,58 327,50 370,50 402,53 404,47 406,50 457,46 460,55 462,50 500,50 512,51 514,49 516,50 562,42 565,59 567,50 610,50 642,54 644,46 646,50 702,48 705,53 707,50 762,44 765,57 767,50 822,51 824,49 826,50 875,50 877,46 880,55 882,50 900,50"
+            fill="none" stroke="#F2E62D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="10" y="13" font-size="8" font-family="'Courier Prime', monospace" fill="currentColor" opacity="0.5">MODEL: ISM-4 &middot; SERIAL 1994-CH-001 &middot; PRE-INTERVENTIE</text>
+          <text x="888" y="13" font-size="8" font-family="'Courier Prime', monospace" fill="#F2E62D" text-anchor="end">&#9679; REC</text>
+          <text x="10" y="94" font-size="7" font-family="'Courier Prime', monospace" fill="currentColor" opacity="0.35">ASPERITATE: 23.7% &middot; FRECVENTA: 0&ndash;20kHz &middot; SCOR CONFORMITATE: 71.4 / 100</text>
+        </svg>
+        <figcaption>Spectrograma tacerii nr. 47.291 &mdash; inainte de interventie</figcaption>
+      </figure>
     </div>
+  </section>
 
-    <div class="hero__stats-wrap reveal" style="--delay:.4s">
-      <div class="container">
-        <dl class="stats__grid">
-          <div class="stat">
-            <dt>Dulapuri reconvertite</dt>
-            <dd><span data-count="1840">0</span></dd>
-          </div>
-          <div class="stat">
-            <dt>Rata de plasament reusit</dt>
-            <dd><span data-count="97.3">0</span><small>%</small></dd>
-          </div>
-          <div class="stat">
-            <dt>Ani de practica certificata</dt>
-            <dd><span data-count="23">0</span></dd>
-          </div>
-          <div class="stat">
-            <dt>Clienti institutionali activi</dt>
-            <dd><span data-count="148">0</span></dd>
-          </div>
-        </dl>
+  <!-- STRIP -->
+  <section class="strip" aria-label="Mentionati in">
+    <div class="container strip__inner">
+      <span class="strip__label">MENTIONATI IN</span>
+      <div class="strip__logos">
+        <span>Acustica Industriala</span>
+        <span>//</span>
+        <span>Revista Linistii</span>
+        <span>//</span>
+        <span>Silence Engineering Quarterly</span>
+        <span>//</span>
+        <span>Gazeta Pauzelor</span>
+        <span>//</span>
+        <span>Basel Business Journal</span>
+        <span>//</span>
+        <span>Arhiva Nationala Sonora</span>
       </div>
     </div>
   </section>
 
-  <!-- ============ PRESS STRIP ============ -->
-  <div class="strip" aria-label="Publicatii de specialitate">
-    <div class="container">
-      <p class="strip__label">Mentionati in publicatii de specialitate</p>
-      <div class="strip__items">
-        <span>Monitorul Mobilierului</span>
-        <span>Jurnal de Interioare Aplicate</span>
-        <span>Revista Structurilor PAL</span>
-        <span>Industria Lemnului Quarterly</span>
-        <span>Cabinet &amp; Co.</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- ============ FEATURES / METODOLOGIE ============ -->
+  <!-- FEATURES -->
   <section id="metodologie" class="features">
     <div class="container">
       <header class="section__header reveal">
-        <span class="eyebrow">Metodologia ReConvert</span>
-        <h2>Trei etape. Un singur <em>dulap</em> transformat.</h2>
+        <span class="eyebrow">PROTOCOLUL ISS-7</span>
+        <h2>Trei etape.<br><em>Zero impuritate auditiva.</em></h2>
       </header>
-
       <div class="features__grid">
-        <article class="feature reveal" style="--delay:.0s">
-          <div class="feature__label">Etapa 01</div>
-          <h3>Evaluare Vocationala Structurala</h3>
-          <p>
-            Consultantul nostru analizeaza geometria interioara, capacitatea portanta si istoricul
-            de utilizare al dulapului. Determinam profilul vocational si compatibilitatea cu noile
-            roluri functionale disponibile pe piata de plasament mobilier.
-          </p>
+        <article class="feature reveal" style="--delay:0s">
+          <span class="feature__num">01</span>
+          <h3>Analiza spectrala preliminara</h3>
+          <p>Inainte de orice interventie, tehnicianul InterSilentium efectueaza o analiza spectrala completa a tacerii identificate. Folosind aparatura ISM-4, catalogam densitatea, temperatura si profilele de asperitate la rezolutie de 0,001 decibeli.</p>
         </article>
-
-        <article class="feature reveal" style="--delay:.12s">
-          <div class="feature__label">Etapa 02</div>
-          <h3>Planificarea Traiectoriei Post-Utilizare</h3>
-          <p>
-            Pe baza profilului vocational, elaboram un plan de tranzitie structurat pe 6 pana la
-            18 luni. Identificam contextele compatibile — arhive, biblioteci, oficii de primire —
-            si pregatim documentatia necesara admiterii.
-          </p>
+        <article class="feature reveal" style="--delay:.08s">
+          <span class="feature__num">02</span>
+          <h3>Slefuire manuala in 7 pasi</h3>
+          <p>Protocolul ISS-7 (International Silence Standard, rev. 2019) cuprinde sapte operatiuni distincte, executate manual de catre inginerul de tacere atestat. Schema nu poate fi automatizata: fiecare tacere are o structura unica, ireductibila la algoritm.</p>
         </article>
-
-        <article class="feature reveal" style="--delay:.24s">
-          <div class="feature__label">Etapa 03</div>
-          <h3>Integrarea in Noul Context Functional</h3>
-          <p>
-            Asistam activ tranzitia catre noul rol. Monitorizarea adaptarii se face saptamanal
-            timp de 90 de zile. Orice inadaptare structurala sau reticenta de utilizare este
-            documentata si adresata in timp real de echipa dedicata.
-          </p>
+        <article class="feature reveal" style="--delay:.16s">
+          <span class="feature__num">03</span>
+          <h3>Raport de conformitate</h3>
+          <p>La finalul fiecarei interventii, clientul primeste un document tehnic cu valorile spectrale inainte si dupa slefuire. Raportul este semnat de inginerul responsabil si arhivat in sistemul nostru pentru minimum 25 de ani.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- ============ TESTIMONIALS ============ -->
+  <!-- COMPARE: before / after -->
+  <section class="compare">
+    <div class="container">
+      <header class="section__header reveal">
+        <span class="eyebrow">EFECTUL INTERVENTIEI</span>
+        <h2>Inainte si dupa<br><em>slefuire.</em></h2>
+      </header>
+      <div class="compare__grid reveal" style="--delay:.08s">
+
+        <div class="compare__panel">
+          <p class="compare__tag compare__tag--before">PRE-INTERVENTIE</p>
+          <figure class="compare__scope">
+            <svg viewBox="0 0 420 80" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <pattern id="grid-b" width="42" height="20" patternUnits="userSpaceOnUse">
+                  <path d="M42 0 L 0 0 0 20" fill="none" stroke="currentColor" stroke-width="0.3" opacity="0.15"/>
+                </pattern>
+              </defs>
+              <rect width="420" height="80" fill="url(#grid-b)"/>
+              <line x1="0" y1="40" x2="420" y2="40" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
+              <polyline
+                points="0,40 18,40 20,30 23,52 25,40 55,40 57,28 61,54 63,40 90,40 92,33 95,49 97,40 125,40 127,26 131,57 133,40 165,40 187,32 190,50 192,40 222,28 226,55 228,40 257,34 260,48 262,40 292,25 296,58 298,40 352,31 355,52 357,40 387,28 391,55 393,40 420,40"
+                fill="none" stroke="#F2E62D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <text x="8" y="13" font-size="7" font-family="'Courier Prime', monospace" fill="currentColor" opacity="0.5">ASPERITATE: 23,7%</text>
+            </svg>
+          </figure>
+          <p class="compare__score">Scor: <strong>71,4 / 100</strong></p>
+        </div>
+
+        <div class="compare__arrow" aria-hidden="true">
+          <span>&#8594;</span>
+          <small>Protocol<br>ISS-7</small>
+        </div>
+
+        <div class="compare__panel compare__panel--after">
+          <p class="compare__tag compare__tag--after">POST-INTERVENTIE</p>
+          <figure class="compare__scope">
+            <svg viewBox="0 0 420 80" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <pattern id="grid-a" width="42" height="20" patternUnits="userSpaceOnUse">
+                  <path d="M42 0 L 0 0 0 20" fill="none" stroke="currentColor" stroke-width="0.3" opacity="0.15"/>
+                </pattern>
+              </defs>
+              <rect width="420" height="80" fill="url(#grid-a)"/>
+              <line x1="0" y1="40" x2="420" y2="40" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
+              <polyline
+                points="0,40 52,40 54,39.4 56,40.6 58,40 132,40 134,40.5 136,39.6 138,40 224,40 226,39.7 228,40.4 230,40 304,40 306,40.3 308,39.8 310,40 384,40 386,40.2 388,39.8 390,40 420,40"
+                fill="none" stroke="#F2E62D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <text x="8" y="13" font-size="7" font-family="'Courier Prime', monospace" fill="currentColor" opacity="0.5">ASPERITATE: 0,2%</text>
+            </svg>
+          </figure>
+          <p class="compare__score">Scor: <strong>99,1 / 100</strong></p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
   <section id="testimoniale" class="testimonials">
     <div class="container">
       <header class="section__header reveal">
-        <span class="eyebrow">Dosare inchise cu succes</span>
-        <h2>Clientii care au ales <em>continuitatea</em>.</h2>
+        <span class="eyebrow">REFERINTE CLIENTI</span>
+        <h2>Ce raporteaza<br><em>clientii institutionali.</em></h2>
       </header>
-
       <div class="testimonials__grid">
-        <figure class="testimonial reveal" style="--delay:.0s">
+        <figure class="testimonial reveal" style="--delay:0s">
           <blockquote>
-            <p>
-              "Dulapul nostru din 1987 credea ca destinul sau s-a incheiat odata cu renovarea.
-              Astazi functioneaza ca arhiva activa a departamentului juridic. Rata de utilizare
-              lunara: 94 de accesari documentate."
-            </p>
+            <p>"Inainte de InterSilentium, tacerile din structura noastra de comunicare aveau o asperitate care se percepea la nivelul intregii echipe. Dupa sase luni de abonament Industrial, productivitatea a crescut cu 17%. Nu am gasit o explicatie mai buna."</p>
           </blockquote>
           <figcaption>
-            <strong>Ing. Ovidiu Marchitan</strong>
-            <span>Director Operational, Holdingul Marchitan &amp; Fii SA</span>
+            <strong>Bogdan Manea</strong>
+            <span>Director Operational &middot; TelCon Romania S.R.L.</span>
           </figcaption>
         </figure>
-
-        <figure class="testimonial reveal" style="--delay:.15s">
+        <figure class="testimonial reveal" style="--delay:.1s">
           <blockquote>
-            <p>
-              "Am trimis trei dulapuri la ReConvert in primavara. Unul a devenit biblioteca,
-              unul — oficiu de primire. Al treilea nu a vrut sa vorbeasca despre trecut.
-              ReConvert a respectat asta si a gasit totusi o solutie dupa doua luni."
-            </p>
+            <p>"Am testat serviciul deliberat: am apelat si inchis de patru ori in aceeasi saptamina. Toate tacerile rezultate au avut scoruri de conformitate peste 98. Am semnat contractul Enterprise in ziua a cincea."</p>
           </blockquote>
           <figcaption>
-            <strong>Drd. Camelia Prisacaru</strong>
-            <span>Asistent Cercetare, Institutul de Studii Mobiliere Avansate</span>
+            <strong>dr. Luminita Vaduva</strong>
+            <span>Cercetator principal &middot; Institutul de Acustica Pasiva, Sibiu</span>
           </figcaption>
         </figure>
       </div>
     </div>
   </section>
 
-  <!-- ============ PRICING ============ -->
+  <!-- PRICING -->
   <section id="abonamente" class="pricing">
     <div class="container">
       <header class="section__header reveal">
-        <span class="eyebrow">Abonamente de consultanta</span>
-        <h2>Alegeti programul potrivit <em>numarului de dulapuri</em>.</h2>
+        <span class="eyebrow">ABONAMENTE LUNARE</span>
+        <h2>Alegeti cadenta<br><em>interventiilor.</em></h2>
       </header>
-
       <div class="pricing__grid">
-        <article class="plan reveal" style="--delay:.0s">
-          <header class="plan__header">
-            <div class="plan__tier">Esential</div>
-            <p class="plan__desc">Pentru proprietari cu un singur dulap disponibilizat.</p>
-            <p class="plan__price"><span>840</span> EUR / luna</p>
+        <article class="plan reveal" style="--delay:0s">
+          <header>
+            <p class="plan__tag">BASELINE</p>
+            <h3>Esential</h3>
+            <p class="plan__desc">Pana la 50 de taceri pe luna. Recomandat pentru persoane fizice si cabinete individuale.</p>
+            <p class="plan__price"><span>290</span> EUR / luna</p>
           </header>
-          <ul class="plan__features">
-            <li>Evaluare vocationala initiala (120 min)</li>
-            <li>Plan de traiectorie pentru 6 luni</li>
-            <li>Raport scris lunar</li>
-            <li>Suport telefonic in zilele lucratoare</li>
+          <ul>
+            <li>50 interventii / luna</li>
+            <li>Analiza spectrala inclusa</li>
+            <li>Raport lunar PDF</li>
+            <li>Asistenta L&ndash;V (9&ndash;17)</li>
           </ul>
-          <a href="#waitlist" class="btn btn--outline">Deschid dosar Esential</a>
+          <a href="#lista" class="btn btn--outline">Aleg Esential</a>
         </article>
 
-        <article class="plan plan--featured reveal" style="--delay:.12s">
-          <span class="plan__badge">Cel mai solicitat</span>
-          <header class="plan__header">
-            <div class="plan__tier">Premium</div>
-            <p class="plan__desc">Pentru loturi de 3 pana la 8 dulapuri dintr-o singura sursa.</p>
-            <p class="plan__price"><span>2 200</span> EUR / luna</p>
+        <article class="plan plan--featured reveal" style="--delay:.08s">
+          <span class="plan__badge">RECOMANDAT</span>
+          <header>
+            <p class="plan__tag">INDUSTRIAL</p>
+            <h3>Profesional</h3>
+            <p class="plan__desc">Taceri nelimitate, prioritate maxima. Potrivit pentru companii cu volum ridicat de apeluri nepreluate.</p>
+            <p class="plan__price"><span>890</span> EUR / luna</p>
           </header>
-          <ul class="plan__features">
-            <li>Evaluare vocationala colectiva</li>
-            <li>Plan individual pentru fiecare dulap</li>
-            <li>Consultanta saptaminala dedicata</li>
-            <li>Monitorizare de adaptare 90 de zile</li>
-            <li>Rapoarte audio + scrise bilunare</li>
+          <ul>
+            <li>Interventii nelimitate</li>
+            <li>Prioritate 24 ore</li>
+            <li>Raport saptaminal + grafice</li>
+            <li>Inginer dedicat</li>
+            <li>Acces arhiva personalizata</li>
           </ul>
-          <a href="#waitlist" class="btn btn--primary">Deschid dosar Premium</a>
+          <a href="#lista" class="btn btn--dark">Aleg Profesional</a>
         </article>
 
-        <article class="plan reveal" style="--delay:.24s">
-          <header class="plan__header">
-            <div class="plan__tier">Patrimoniu</div>
-            <p class="plan__desc">Pentru colectii institutionale, conace si mosteniri de mobilier.</p>
+        <article class="plan reveal" style="--delay:.16s">
+          <header>
+            <p class="plan__tag">INSTITUTIONAL</p>
+            <h3>Enterprise</h3>
+            <p class="plan__desc">Integrare in infrastructura proprie, SLA garantat. Pentru institutii cu cerinte de confidentialitate extinse.</p>
             <p class="plan__price"><span>La cerere</span></p>
           </header>
-          <ul class="plan__features">
-            <li>Echipa dedicata de doi consultanti</li>
-            <li>Evaluare istorica si structurala extinsa</li>
-            <li>Documentare foto + video a tranzitiei</li>
-            <li>Clauze extinse de confidentialitate</li>
-            <li>Acces la reteaua premium de plasament</li>
+          <ul>
+            <li>Integrare API completa</li>
+            <li>SLA 99,9% garantat</li>
+            <li>Audit anual on-site</li>
+            <li>Confidentialitate extinsa</li>
+            <li>Formare interna personal</li>
           </ul>
-          <a href="#waitlist" class="btn btn--outline">Solicit o intrevedere</a>
+          <a href="#lista" class="btn btn--outline">Solicita oferta</a>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- ============ FAQ ============ -->
-  <section id="faq" class="faq">
+  <!-- FAQ -->
+  <section id="intrebari" class="faq">
     <div class="container">
       <header class="section__header reveal">
-        <span class="eyebrow">Intrebari frecvente</span>
-        <h2>Ce intreaba <em>proprietarii</em> cel mai des.</h2>
+        <span class="eyebrow">INTREBARI FRECVENTE</span>
+        <h2>Ce ne intreaba<br><em>clientii cel mai des.</em></h2>
       </header>
-
-      <div class="faq__list">
+      <div class="faq__list reveal" style="--delay:.05s">
         <details>
-          <summary>Dulapul meu este din PAL melaminat. Il acceptati in program?</summary>
-          <p>
-            Da. Acceptam toate substantele structurale: PAL, MDF, lemn masiv, combinatii
-            hibrid-sintetice. Profilul vocational nu depinde de material, ci de geometria
-            functionala si istoricul documentat de utilizare.
-          </p>
+          <summary>Cum identificati o tacere care necesita interventie?</summary>
+          <p>Echipamentul ISM-4 detecteaza asperitatile subaudibile in intervalele de liniste. Un scor de conformitate sub 94,5 puncte indica necesitatea slefuirii. Clientii abonati primesc notificare automata la fiecare tacere identificata.</p>
         </details>
-
         <details>
-          <summary>Care este durata medie a unui program de reconversie?</summary>
-          <p>
-            Intre 6 si 18 luni, in functie de complexitatea profilului si disponibilitatea
-            contextelor de plasament identificate. Dulapurile cu istoric documentat complet
-            au in general tranzitii cu 35% mai rapide.
-          </p>
+          <summary>Functioneaza serviciul pentru apeluri internationale?</summary>
+          <p>Da. Tacerile internationale au o structura mai complexa, datorita latentei de retea si diferentei de fus orar. Percepem un supliment de 15% pentru orice apel cu prefix international, aplicat automat la facturarea lunara.</p>
         </details>
-
         <details>
-          <summary>Pot trimite un dulap in program fara sa il informez in prealabil?</summary>
-          <p>
-            Nu. Politica ReConvert impune ca orice dulap sa fie pregatit structural si contextual
-            inainte de admitere. O tranzitie neanuntata genereaza rezistenta adaptativa si intarzie
-            plasamentul cu pana la 40%, conform studiilor noastre interne.
-          </p>
+          <summary>Ce se intampla cu tacerile ireversibil deteriorate?</summary>
+          <p>In sub 3% din cazuri, o tacere poate fi prea degradata pentru recuperare. Aceasta este catalogata in Arhiva Nationala a Tacerilor Irecuperabile, iar clientul primeste un certificat de constatare fara cost suplimentar.</p>
         </details>
-
         <details>
-          <summary>Oferiti consultanta si pentru alte piese de mobilier — comode, rafturi?</summary>
-          <p>
-            Nu. ReConvert lucreaza exclusiv cu dulapuri si sifoniere, din motive de specializare
-            metodologica. Pentru reconversia comodelor, recomandam cu caldura partenerul nostru
-            "Tranzitii Mobiliere Sudice" din Craiova.
-          </p>
+          <summary>Puteti interveni si pe tacerile din mesageria vocala?</summary>
+          <p>Da. Tacerile din mesagerie reprezinta circa 40% din interventiile noastre anuale. Procesul include un pas suplimentar de digitizare calibrata, documentat in apendicele 3 al protocolului ISS-7.</p>
         </details>
       </div>
     </div>
   </section>
 
-  <!-- ============ WAITLIST FORM ============ -->
-  <section id="waitlist" class="waitlist">
-    <div class="grain grain--dark" aria-hidden="true"></div>
+  <!-- WAITLIST -->
+  <section id="lista" class="waitlist">
     <div class="container waitlist__inner">
       <div class="waitlist__copy reveal">
-        <span class="eyebrow">Lista de asteptare</span>
-        <h2>Acceptam <em>12 dosare noi</em> in trimestrul curent.</h2>
-        <p>
-          Completati formularul si va contactam in 48 de ore pentru o evaluare
-          preliminara gratuita. Fara angajamente. Confidential.
-        </p>
+        <span class="eyebrow">LISTA DE ASTEPTARE</span>
+        <h2>Singurul inginer disponibil<br><em>se elibereaza in august.</em></h2>
+        <p>Lasati datele de contact si volumul estimat de apeluri. Va contactam in maximum 48 de ore pentru o evaluare preliminara, fara obligatii.</p>
       </div>
-
-      <form id="waitlist-form" class="waitlist__form reveal" novalidate style="--delay:.14s">
+      <form class="waitlist__form reveal" id="waitlist-form" novalidate style="--delay:.1s">
         <label class="field">
           <span>Nume complet</span>
-          <input type="text" name="nume" required autocomplete="name"
-                 placeholder="ex. Gheorghe Vasilescu" />
+          <input type="text" name="nume" required autocomplete="name" placeholder="ex. Mihai Ionescu" />
         </label>
-
         <label class="field">
           <span>Adresa de email</span>
-          <input type="email" name="email" required autocomplete="email"
-                 placeholder="ex. g.vasilescu@companie.ro" />
+          <input type="email" name="email" required autocomplete="email" placeholder="ex. mihai@companie.ro" />
         </label>
-
         <label class="field">
-          <span>Cate dulapuri necesita consultanta?</span>
-          <select name="dulapuri" required>
-            <option value="">Selectati...</option>
-            <option value="1">Un singur dulap</option>
-            <option value="2-3">2–3 dulapuri</option>
-            <option value="4-8">4–8 dulapuri (lot)</option>
-            <option value="9+">9 sau mai multe (colectie)</option>
+          <span>Apeluri nepreluate pe saptamina (estimat)</span>
+          <select name="apeluri" required>
+            <option value="">Selectati intervalul...</option>
+            <option value="1-10">1 &ndash; 10 apeluri</option>
+            <option value="11-50">11 &ndash; 50 apeluri</option>
+            <option value="51-200">51 &ndash; 200 apeluri</option>
+            <option value="200+">Peste 200 apeluri</option>
           </select>
         </label>
-
-        <button type="submit" class="btn btn--primary btn--lg">Deschid dosar de reconversie</button>
-
+        <button type="submit" class="btn btn--primary btn--lg">Trimit cererea</button>
         <p class="form__status" role="status" aria-live="polite"></p>
       </form>
     </div>
   </section>
 
-  <!-- ============ FOOTER ============ -->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <span class="nav__monogram" style="width:40px;height:40px;font-size:1rem;margin-bottom:1rem">RC</span>
-        <p>ReConvert. Consultanta structurata pentru<br/>dulapurile care merita o a doua sansa.</p>
+        <span class="footer__logo">INTERSILENTIUM S.A.</span>
+        <p>Slefuim tacerile cu precizie de laborator. Din 1994.</p>
       </div>
       <nav class="footer__nav" aria-label="Linkuri subsol">
         <div>
           <h4>Servicii</h4>
-          <a href="#">Evaluare vocationala</a>
-          <a href="#">Planificare traiectorie</a>
-          <a href="#">Integrare contextuala</a>
+          <a href="#">Analiza spectrala</a>
+          <a href="#">Protocolul ISS-7</a>
+          <a href="#">Arhiva interventii</a>
         </div>
         <div>
           <h4>Companie</h4>
-          <a href="#">Despre noi</a>
+          <a href="#">Istoric</a>
           <a href="#">Presa</a>
           <a href="#">Cariere</a>
         </div>
         <div>
           <h4>Contact</h4>
-          <a href="#">dosare@reconvert.ro</a>
-          <a href="#">+40 21 999 0001</a>
-          <a href="#">Bucuresti · Cluj · Sibiu</a>
+          <a href="#">interventii@intersilentium.ch</a>
+          <a href="#">+41 61 555 0012</a>
+          <a href="#">Basel &middot; Sibiu &middot; Praga</a>
         </div>
       </nav>
     </div>
     <div class="container footer__bottom">
-      <span>© 2026 ReConvert Consulting SRL. Toate drepturile rezervate.</span>
-      <span>AI-Wizard · Week 01 <button id="secret-btn" class="secret-btn" aria-label="dosar confidential">·</button></span>
+      <span>&copy; 2026 InterSilentium S.A., Basel. Toate drepturile rezervate.</span>
+      <span>Challenge <strong>AI-Wizard &middot; Week 01</strong>
+        <button id="secret-trigger" class="secret-trigger" aria-label="Raport secret" title="Konami: ↑↑↓↓←→←→BA">&#183;</button>
+      </span>
     </div>
   </footer>
 
-  <!-- ============ EASTER EGG DIALOG ============ -->
+  <!-- Easter egg dialog -->
   <div id="easter-egg" class="easter" hidden>
     <div class="easter__card" role="dialog" aria-modal="true" aria-labelledby="easter-title">
-      <div class="easter__stamp">CONFIDENTIAL</div>
-      <h3 id="easter-title">Dosar #RC-0047 — <em>Clasificat</em></h3>
-      <p>
-        In 2019, un dulap de stejar masiv din 1962 a refuzat reconversia timp de 11 luni.
-        Consultantul principal a renuntat. Dulapul, nu. Astazi este director de arhiva
-        la o firma de audit din Brasov.
-      </p>
-      <p class="easter__note">Acest dosar nu apare in rapoartele publice.</p>
-      <button id="easter-close" class="btn btn--outline btn--sm">Inchid dosarul</button>
+      <p class="easter__eyebrow">RAPORT CLASIFICAT &middot; NR. 00001</p>
+      <h3 id="easter-title">Prima tacere slefuita de InterSilentium.</h3>
+      <p>12 noiembrie 1994, ora 23:17, Basel. Tacerea a durat 4,3 secunde si a survenit intre un apel neprimit si un alt apel neprimit de la acelasi numar. Scorul de conformitate final: <strong>99,8</strong>.</p>
+      <p>Inginerul responsabil, dr. H. Kleist, a notat in fisa de lucru:</p>
+      <blockquote>"Impecabila. Ca si cum nu ar fi existat niciodata."</blockquote>
+      <button id="easter-close" class="btn btn--outline btn--sm">Inchid raportul</button>
     </div>
   </div>
 
